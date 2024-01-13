@@ -1,17 +1,27 @@
+:root {
+  --background-color: #282D35;
+  --nav-background-color: #21222A;
+  --main-color: white;
+  --text-color: #DEEBF8;
+  --accent-color: #61DAFB;
+}
+
+
 * {
+    color: #b9b9b9;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
 body {
     margin: 0;
-    background-color: #282D35;
+    background-color: var(--background-color);
 }
 
 nav {
     display: flex;
     align-items: center;
-    background-color: #21222A;
+    background-color: var(--nav-background-color);
     height: 90px;
     padding: 30px 25px;
 }
@@ -23,13 +33,13 @@ nav {
 
 .nav--logo-text {
     margin-right: auto;
-    color: #61DAFB;
+    color: var(--accent-color);
     font-weight: 700;
     font-size: 22px;
 }
 
 .nav--title {
-    color: #DEEBF8;
+    color: var(--text-color);
     font-weight: 600;
 }
 
@@ -39,7 +49,7 @@ nav {
 
 main {
     padding: 57px 27px;
-    color: white;
+    color: var(--main-color);
     background-image: url('./assets/react.svg');
     background-repeat: no-repeat;
     background-position: right center;
@@ -63,6 +73,6 @@ main {
 }
 
 .main--facts > li::marker {
-    color: #61DAFB;
+    color: var(--accent-color);
     font-size: 1.4em;
 }
